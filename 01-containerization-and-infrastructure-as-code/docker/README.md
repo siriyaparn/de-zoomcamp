@@ -31,3 +31,15 @@ docker run -it \
   -p 5432:5432 \
   postgres:13
 ```
+## CLI for Postgres
+`pgcli` is a command-line designed for interacting with PostgreSQL databases.
+
+Installing `pgcli`
+```sh
+pip install pgcli
+```
+
+Using `pgcli` to connect to Postgres
+```
+pgcli -h localhost -p 5432 -u root -d ny_taxi
+```
