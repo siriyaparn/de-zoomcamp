@@ -2,11 +2,16 @@
 - Install Docker
 - Create a simple data pipeline using Docker
 
-### Ingesting NY Taxi Data to Postgres
+## Ingesting NY Taxi Data to Postgres
 Downloading the data
 ```sh
 wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz 
 ```
+### NY Trips Dataset
+Dataset:
+- https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+- https://www1.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+
 ## Running Postgres with Docker
 **Windows**
 
@@ -43,3 +48,4 @@ Using `pgcli` to connect to Postgres
 ```
 pgcli -h localhost -p 5432 -u root -d ny_taxi
 ```
+
