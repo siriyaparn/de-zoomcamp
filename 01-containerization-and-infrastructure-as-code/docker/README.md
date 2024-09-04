@@ -85,3 +85,22 @@ docker run -it \
   dpage/pgadmin4
 ```
 
+## Data ingestion
+Running locally
+```sh
+URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
+
+python ingest_data.py \
+  --user=root \
+  --password=root \
+  --host=localhost \
+  --port=5432 \
+  --db=ny_taxi \
+  --table_name=yellow_taxi_trips \
+  --url=${URL}
+```
+Build the image
+```sh
+docker build -t taxi_ingest:v001 .
+```
+
