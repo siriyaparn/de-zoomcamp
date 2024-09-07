@@ -86,7 +86,11 @@ docker run -it \
 ```
 
 ## Data ingestion
-Running locally
+- Converting the Jupyter notebook to a Python script
+- Parametrizing the script with argparse
+- Dockerizing the ingestion script
+
+Run locally
 ```sh
 URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
 
@@ -99,7 +103,7 @@ python ingest_data.py \
   --table_name=yellow_taxi_trips \
   --url=${URL}
 ```
-Build the image
+Or build the image from Dockerfile
 ```sh
 docker build -t taxi_ingest:v001 .
 ```
@@ -117,4 +121,22 @@ docker run -it \
     --db=ny_taxi \
     --table_name=yellow_taxi_trips \
     --url=${URL}
+```
+
+## Running Postgres and pgAdmin with Docker-Compose
+To connect two Docker containers together, we create a Docker network. However, we can also connect two Docker containers without creating a network by using a YAML file.
+
+Run Docker-Compose
+```sh
+docker-compose up
+```
+
+Run in detached mode
+```sh
+docker-compose up -d
+```
+
+Shut Docker-Compose down
+```sh
+docker-compose down
 ```
