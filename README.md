@@ -2,6 +2,8 @@
 The workshop is created by DataTalks.Club. This workshop cover the necessary tools use in data engineering and how data engineer work. 
 
 ## Overview
+<img src="picture/overview.png" width=100% height=40%>
+
 ### Module 1: Containerization and Infrastructure as Code
 - Introduction to GCP
 - Docker and docker-compose
