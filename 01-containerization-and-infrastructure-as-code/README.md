@@ -171,3 +171,29 @@ Shut Docker-Compose down
 ```sh
 docker-compose down
 ```
+
+# Introduction to Terraform
+Terraform is an open-source Infrastructure-as-Code (IaC) tool developed by HashiCorp. It is used for provisioning, managing, and automating infrastructure resources such as servers, databases, and networking components across various cloud providers and on-premise environments. 
+
+**Files**
+
+- `main.tf`
+- `variables.tf`
+- Optional: `resources.tf`, `output.tf`
+- `.tfstate`
+
+**Declarations**
+
+- `terraform`: configure basic Terraform settings to provision your infrastructure
+  - `required_version`: minimum Terraform version to apply to your configuration
+  - `backend`: stores Terraform's "state" snapshots, to map real-world resources to your configuration.
+    - `local`: stores state file locally as terraform.tfstate
+  - `required_providers`: specifies the providers required by the current module
+- `provider`
+  - adds a set of resource types and/or data sources that Terraform can manage
+  - The Terraform Registry is the main directory of publicly available providers from most major infrastructure platforms.
+- `resource`
+ - blocks to define components of your infrastructure
+ - Project modules/resources: google_storage_bucket, google_bigquery_dataset, google_bigquery_table
+- `variable` & `locals`
+  - runtime arguments and constants
