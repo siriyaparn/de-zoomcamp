@@ -197,3 +197,24 @@ Terraform is an open-source Infrastructure-as-Code (IaC) tool developed by Hashi
  - Project modules/resources: google_storage_bucket, google_bigquery_dataset, google_bigquery_table
 - `variable` & `locals`
   - runtime arguments and constants
+
+## Terraform command
+Initialize, configure the backend, install plugins/providers, check out an existing configuration from a version control
+```sh
+terraform init
+```
+
+Match and preview local changes against a remote state, and proposes an Execution Plan
+```sh
+terraform plan
+```
+
+Ask for approval to the proposed plan, and applies changes 
+```sh
+terraform apply
+```
+
+Remove your stack 
+```sh
+terraform destroy
+```
