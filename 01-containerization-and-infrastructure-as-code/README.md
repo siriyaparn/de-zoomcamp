@@ -175,6 +175,16 @@ docker-compose down
 # Introduction to Terraform
 Terraform is an open-source Infrastructure-as-Code (IaC) tool developed by HashiCorp. It is used for provisioning, managing, and automating infrastructure resources such as servers, databases, and networking components across various cloud providers and on-premise environments. 
 
+**What is IaC?**
+- Infrastructure-as-Code
+- build, change, and manage your infrastructure in a safe, consistent, and repeatable way by defining resource configurations that you can version, reuse, and share.
+
+**Some advantages**
+- Infrastructure lifecycle management
+- Version control commits
+- Very useful for stack-based deployments, and with cloud providers such as AWS, GCP, Azure, K8S…
+- State-based approach to track resource changes throughout deployments
+
 **Files**
 
 - `main.tf`
@@ -218,3 +228,33 @@ Remove your stack
 ```sh
 terraform destroy
 ```
+
+# Google Cloud Platform (GCP) Overview
+### Initial Setup
+For this course, we'll use a free version (upto EUR 300 credits)
+1. Create an account with your Google email ID
+2. Setup your first project if you haven't already
+3. Setup service account & authentication for this project
+   -  Grant Viewer role to begin with.
+   - Download service-account-keys (.json) for auth
+5. Download SDK for local setup
+6. Set environment variable to point to your downloaded GCP keys:
+  ```sh
+  export GOOGLE_APPLICATION_CREDENTIALS="<path/to/your/service-account-authkeys>.json"
+  # Refresh token/session, and verify authentication
+  gcloud auth application-default login
+  ```
+
+### Setup for Access
+1. IAM Roles for Service account:
+   - Go to the IAM section of IAM & Admin https://console.cloud.google.com/iam-admin/iam
+   - Click the Edit principal icon for your service account
+   - Add these roles in addition to Viewer : Storage Admin + Storage Object Admin + BigQuery Admin
+2. Enable these APIs for your project:
+   - https://console.cloud.google.com/apis/library/iam.googleapis.com
+   - https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com
+3. Ensure `GOOGLE_APPLICATION_CREDENTIALS env-var` is set
+
+   ```sh
+   export GOOGLE_APPLICATION_CREDENTIALS="<path/to/your/service-account-authkeys>.json"
+   ```
