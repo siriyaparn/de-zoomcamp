@@ -11,3 +11,5 @@ Workflow orchestration refers to the automated coordination, management, and exe
 - `Observability`: have visibility into every part of the data pipeline 
 - `Debugging`: part of observability, debug data pipelines easily
 - `Compliance, auduting`: help with compliance or auditing
+
+# Intro to Mage
