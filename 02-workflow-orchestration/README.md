@@ -12,4 +12,9 @@ Workflow orchestration refers to the automated coordination, management, and exe
 - `Debugging`: part of observability, debug data pipelines easily
 - `Compliance, auduting`: help with compliance or auditing
 
+### A good orchestrator priortizes ..
+- `Flow state`
+- `Feedback loops`
+- `Cognitive load`
+
 # Intro to Mage
