@@ -13,8 +13,8 @@ Workflow orchestration refers to the automated coordination, management, and exe
 - `Compliance, auduting`: help with compliance or auditing
 
 ### A good orchestrator priortizes ..
-- `Flow state`
-- `Feedback loops`
-- `Cognitive load`
+- `Flow state`: ensure that tasks are completed seamlessly without unnecessary interruptions
+- `Feedback loops`: ensure that users or systems are informed about progress, errors, or successes as quickly as possible
+- `Cognitive load`: reduce the effort required to operate or monitor the orchestrated processes
 
 # Intro to Mage
