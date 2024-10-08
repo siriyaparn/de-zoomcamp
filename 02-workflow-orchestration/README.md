@@ -18,3 +18,5 @@ Workflow orchestration refers to the automated coordination, management, and exe
 - `Cognitive load`: reduce the effort required to operate or monitor the orchestrated processes
 
 # Intro to Mage
+### What is Mage?
+Mage is an open-source pipeline tool for orchestrating , transforming, and integrting data
