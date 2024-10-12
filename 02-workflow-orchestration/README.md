@@ -28,3 +28,7 @@ Mage accelerates pipeline development
 - Improved DevEx
   - Code and test in parallel
   - Reduce your dependencies, switch tools less, be efficient
+
+Engineering best-practices built-in
+- In-line testing and debugging
+- 
