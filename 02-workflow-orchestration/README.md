@@ -3,7 +3,7 @@ Workflow orchestration refers to the automated coordination, management, and exe
 
 ### A good orchestrator handles ..
 - `Workflow management`: define schedule, manage workflows efficiently, ensure tasks are executed in the right order and manage dependencies
-- `Automation`: make sure that the orchestration solution is good at sutomation
+- `Automation`: make sure that the orchestration solution is good at automation
 - `Error handling`: come up with build-in solutions for handling errors, conditional logic branching, retrying failed tasks
 - `Recovery`: need to be a way to backfill, a way to recover lost data
 - `Monitoring`, alerting: send a notification if a pipeline or if those retries do to happen
@@ -21,6 +21,7 @@ Workflow orchestration refers to the automated coordination, management, and exe
 ### What is Mage?
 Mage is an open-source pipeline tool for orchestrating , transforming, and integrting data
 
+
 Mage accelerates pipeline development
 - Hybrid environment
   - Use GUI for interactive development
@@ -31,4 +32,8 @@ Mage accelerates pipeline development
 
 Engineering best-practices built-in
 - In-line testing and debugging
-- 
+  - Familiar, notebook-style format
+- Fully-featured observability
+  - Transformation in one place: dbt models, streaming
+- Dry principles
+  - No more DAGs with duplicate functions
