@@ -21,7 +21,6 @@ Workflow orchestration refers to the automated coordination, management, and exe
 ### What is Mage?
 Mage is an open-source pipeline tool for orchestrating , transforming, and integrting data
 
-
 Mage accelerates pipeline development
 - Hybrid environment
   - Use GUI for interactive development
