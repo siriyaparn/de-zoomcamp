@@ -39,6 +39,7 @@ Mage is an open-source pipeline tool for orchestrating, transforming, and integr
  
 ### The core concept in Mage
 <img src="picture/mage-core-concept.png" width=100% height=40%>
+
 **Projects**
 - A project forms the basis for all the work you can do in Mage— you can think of it like a GitHub repo.
 - It contains the code for all of your pipelines, blocks, and other assets.
