@@ -58,4 +58,29 @@ Mage is an open-source pipeline tool for orchestrating, transforming, and integr
 - Changing one block will change it everywhere it’s used, but don’t worry, it’s easy to detach blocks to separate instances if necessary.
 - Blocks can be used to perform a variety of actions, from simple data transformations to complex machine learning models.
 
+
 # Overview
+### Configure Mage
+Cloning the repo
+```sh
+git clone https://github.com/mage-ai/mage-zoomcamp.git mage-zoomcamp
+```
+
+Navigate to the repo
+```sh
+cd mage-data-engineering-zoomcamp
+```
+
+Rename ```dev.env``` to simply ```.env```
+
+Build the container
+```sh
+docker compose build
+```
+
+Start the Docker container
+```sh
+docker compose up
+```
+Navigate to [Road to Data Engineer](http://localhost:6789) in the browser to get started with Mage.
+
