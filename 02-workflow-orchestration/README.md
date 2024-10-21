@@ -61,6 +61,9 @@ Mage is an open-source pipeline tool for orchestrating, transforming, and integr
 
 # Overview
 ### Configure Mage
+
+This repo contains a Docker Compose template for getting started with a new Mage project. It requires Docker to be installed locally. If Docker is not installed, please follow the instructions [here](https://docs.docker.com/get-docker/). 
+
 Cloning the repo
 ```sh
 git clone https://github.com/mage-ai/mage-zoomcamp.git mage-zoomcamp
@@ -68,7 +71,7 @@ git clone https://github.com/mage-ai/mage-zoomcamp.git mage-zoomcamp
 
 Navigate to the repo
 ```sh
-cd mage-data-engineering-zoomcamp
+cd mage
 ```
 
 Rename ```dev.env``` to simply ```.env```
