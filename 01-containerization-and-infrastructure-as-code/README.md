@@ -18,3 +18,16 @@ docker build -t taxi-ingest:v001 .
 
 docker run -it test:pandas
 ```
+
+## Ingesting NY Taxi Data to Postgres
+### Postgres
+Postgres is a versatile database that is designed for transactional purposes rather than analytics. Despite this, it is powerful and sometimes employed as a data warehouse solution.
+
+Downloading the data
+```sh
+wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz 
+```
+### NY Trips Dataset
+Dataset:
+- https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+- https://www1.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
