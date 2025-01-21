@@ -27,6 +27,11 @@ Downloading the data
 ```sh
 wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz 
 ```
+To extract the file
+```sh
+gzip -d yellow_tripdata_2021-01.csv.gz
+```
+
 ### NY Trips Dataset
 Dataset:
 - https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page
