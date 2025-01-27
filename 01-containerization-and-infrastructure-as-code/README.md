@@ -61,3 +61,61 @@ docker run -it \
   -p 5432:5432 \
   postgres:13
 ```
+
+## CLI for Postgres
+`pgcli` is a command-line designed for interacting with PostgreSQL databases on local machine (localhost) or hosted on remote servers.
+
+- Installing `pgcli`
+```sh
+pip install pgcli
+```
+
+- Using `pgcli` to connect to Postgres
+```sh
+pgcli -h localhost -p 5432 -u root -d ny_taxi
+```
+
+- Check with tables
+```sh
+/dt
+```
+
+## pgAdmin
+It is not convenient to use pgcli for data exploration and querying. Instead, we will use pgAdmin, the standard graphical tool for postgres. We can run it with docker. However, this docker container cannot access the postgres container. We need to link them by creating a network.
+
+Running pgAdmin
+```sh
+docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="root" \
+  -p 8080:80 \
+  dpage/pgadmin4
+```
+## Running Postgres and pgAdmin together
+Create a network
+``` sh
+docker network create pg-network
+```
+Run Postgres 
+```sh
+docker run -it \
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="ny_taxi" \
+  -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  --network=pg-network \
+  --name pg-database \
+  postgres:13
+```
+
+Run pgAdmin
+```sh
+docker run -it \
+  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+  -e PGADMIN_DEFAULT_PASSWORD="root" \
+  -p 8080:80 \
+  --network=pg-network \
+  --name pgadmin-2 \
+  dpage/pgadmin4
+```
