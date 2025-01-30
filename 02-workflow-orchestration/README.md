@@ -1,4 +1,4 @@
-# Intro to Orchestration
+# Introduction to Orchestration
 Workflow orchestration refers to the automated coordination, management, and execution of tasks within a workflow. It involves organizing and scheduling tasks in a particular sequence to ensure they are executed in the right order and at the right time, based on dependencies, conditions, and requirements.
 
 # What is Kestra?
@@ -13,3 +13,11 @@ Workflow orchestration refers to the automated coordination, management, and exe
 - Kestra supports many languages which is useful because while `Pyhton` is a super versatile and useful language but it is not always the right tool for some jobs. Some pipeline might use `Rush` or `C` purely if working with large model and large dataset.
 - Kestra allows us to monitor everything and have a good insight into what is going on with these pipelines with Gant view.
 - Kestra is enhanced by over 600 plugins.
+
+### What will we cover?
+- Introduction to Kestra
+- ETL: Extract data and load it to Postgres
+- ETL: Extract data and load it to Google Cloud
+- Parammeterzing Execution
+- Scheduling and Backfills
+- Install Kestra on the Cloud and sync your Flows with Git
