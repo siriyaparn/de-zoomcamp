@@ -6,3 +6,8 @@ The workshop is created by DataTalks.Club. This workshop cover the necessary too
 - Docker and docker-compose
 - Running Postgres locally with Docker
 - Setting up infrastructure on GCP with Terraform
+
+### Module 2: Workflow Orchestration
+- Data Lake
+- Workflow orchestration
+- Workflow orchestration with Kestra
