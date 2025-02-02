@@ -21,3 +21,9 @@ Workflow orchestration refers to the automated coordination, management, and exe
 - Parammeterzing Execution
 - Scheduling and Backfills
 - Install Kestra on the Cloud and sync your Flows with Git
+
+## Build Data Pipelines with Kestra
+### Resources
+- [Quickstart](https://kestra.io/docs/getting-started/quickstart)
+- [Install Kestra with Docker Compose](https://kestra.io/docs/installation/docker-compose)
+- [Tutorial](https://kestra.io/docs/getting-started/tutorial)
