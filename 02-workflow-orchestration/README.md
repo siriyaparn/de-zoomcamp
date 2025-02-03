@@ -27,3 +27,4 @@ Workflow orchestration refers to the automated coordination, management, and exe
 - [Quickstart](https://kestra.io/docs/getting-started/quickstart)
 - [Install Kestra with Docker Compose](https://kestra.io/docs/installation/docker-compose)
 - [Tutorial](https://kestra.io/docs/getting-started/tutorial)
+- [What is an Orchestrator?](https://kestra.io/blogs/2024-09-18-what-is-an-orchestrator)
