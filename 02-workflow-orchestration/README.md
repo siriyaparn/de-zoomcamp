@@ -28,3 +28,18 @@ Workflow orchestration refers to the automated coordination, management, and exe
 - [Install Kestra with Docker Compose](https://kestra.io/docs/installation/docker-compose)
 - [Tutorial](https://kestra.io/docs/getting-started/tutorial)
 - [What is an Orchestrator?](https://kestra.io/blogs/2024-09-18-what-is-an-orchestrator)
+
+### Download the Docher Compose file
+Download the Docker Compose file using the following command on Linux and macOS:
+```
+curl -o docker-compose.yml \
+https://raw.githubusercontent.com/kestra-io/kestra/develop/docker-compose.yml
+```
+
+### Setup Kestra
+Set up Kestra using Docker Compose containing one container for the Kestra server and another for the Postgres database:
+```
+cd 02-workflow-orchestration/
+docker compose up -d
+```
+Once the container starts, you can access the Kestra UI at http://localhost:8080.
